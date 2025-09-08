@@ -12,6 +12,9 @@
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- font awesome cdn-->
+    <script src="https://kit.fontawesome.com/0ded252619.js" crossorigin="anonymous"></script>
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +23,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
 
-    <style>
+    <style type="text/tailwindcss">
+        
         .font-ADLaM-Display {
             font-family: "ADLaM Display", system-ui;
         }
@@ -28,11 +32,46 @@
         .font-sora {
             font-family: "Sora", sans-serif;
         }
+         @theme {
+        --color-clifford: #da373d;
+        --color-primary: #FFDC26
+      }
+       
     </style>
+   
+    
 </head>
 <!-- Header Section -->
-<header>
-
+<header class="container mx-auto">
+    <!-- navbar -->
+    <nav class="font-sora bg-[#FFF9F4]">
+        <div class="navbar bg-base-100 lg:px-[140px] px-4 lg:py-7 py-3 border-b border-[#111111] lg:border-none">
+            <div class="navbar-start">
+                <div class="dropdown">                    
+                </div>
+                <img class="w-12 h-12" src="c1-assets/logo-header.png" alt="">
+                <a class=" hidden lg:flex btn btn-ghost text-[26px] font-normal">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+            </div>
+            <div class=" navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-[20px] font-normal"><a>Find a pet</a></li>
+                    <li class="text-[20px] font-normal"><a>Breeds</a></li>
+                    <li class="text-[20px] font-normal"><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class=" navbar-end gap-3">
+               <div class="hidden lg:flex gap-4 ">
+                 <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+               <div class="lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+                <a class=" hidden lg:flex btn border-primary text-[20px] font-normal px-[30px] py-[10px]">Login</a>
+                <a class=" hidden lg:flex btn bg-primary text-[20px] font-normal px-[30px] py-[10px]">Register</a>
+            </div>
+        </div>
+    </nav>
 </header>
 <!-- Main Section -->
 <main>
